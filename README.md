@@ -1,5 +1,7 @@
 # DevChallenges.io - Flip The Coin
 
+Link: https://kezerumut.github.io/flip-the-coin-master/
+
 ![Thumbnail for the Flip The Coin coding challenge](./thumbnail.jpg)
 
 ## Welcome! 👋
