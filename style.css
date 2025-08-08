@@ -6,17 +6,19 @@
 
 body {
   height: 100vh;
+  background-color: #404a65;
 }
 
 .author-info {
   font-size: 14px;
   text-align: center;
-  margin-top: 16px;
-  color: rgb(55, 65, 81);
+  margin-top: 64px;
+  color: #ecedf0;
 }
 
 .author-info a {
   text-decoration: none;
+  color: aquamarine;
 }
 
 .container {
@@ -27,11 +29,20 @@ body {
   height: 100%;
 }
 .container h1 {
-  color: #ecedf0;
   font-size: 64px;
   text-shadow: 2px 2px 0px #35383f;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: #35383f;
+}
+.container h3 {
+  font-size: 24x;
+  padding-top: 10px;
+}
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ecedf0;
 }
 .container button {
   padding: 10px 20px;
@@ -45,4 +56,34 @@ body {
 }
 .container button:hover {
   background-color: #4338ca;
+}
+
+.coin {
+  margin-top: 32px;
+}
+.coin-shadow img {
+  align-items: center;
+}
+.coin-text {
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.coin-text p {
+  font-size: 20px;
+}
+.flip {
+  animation: spin 1s ease-in-out;
+}
+
+/* Ana dönüş animasyonu */
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(2160deg);
+  }
 }

@@ -10,43 +10,39 @@
       type="image/x-icon"
       sizes="96x96"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Flip the coin | devChallenges.io</title>
 
     <link rel="stylesheet" href="style.css" />
     
 
+
   </head>
   <body>
-    <!-- 
-
-    Flip a Coin Game
-    Press the coin or the button to flip the coin
-    Head
-    Tail
-    Random
-  
-    -->
-
     <div class="container">
-      <h1>Flip a Coin</h1>
-      <h3>Press the coin or the button to flip the coin</h3>
+      <h1 class="kanit-semibold">Flip a Coin</h1>
+      <h3 class="kanit-semibold">Press the coin or the button to flip the coin</h3>
 
-      <div class="coin" id="coin">
+      <div class="coin" >
         <img
+        id="coin"
           src="resources/heads.svg"
           alt="CoinHeads"
           class="Heads-image"
         />
-         <img
-          src="resources/tails.svg"
-          alt="CoinTails"
-          class="Tails-image"
-        />
-        <img src="resources/shadow.svg" alt="CoinShadow" class="coin-shadow" />
-        <div class="side front">Head</div>
-        <div class="side back">Tail</div>
       </div>
+
+      <div class="coin-shadow">
+        <img src="resources/shadow.svg" alt="CoinShadow"  />
+      </div>
+
+      <div class="coin-text" >
+          <p class="kanit-semibold" id="result">Head/Tail</p>    
+      </div>
+      
       <button id="flipButton">Random</button>
 
     <div class="author-info">
@@ -55,5 +51,6 @@
         >devChallenges.io</a
       >.
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
